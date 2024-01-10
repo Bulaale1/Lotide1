@@ -1,6 +1,5 @@
 /* eslint-disable linebreak-style */
 const eqArrays = function(arr1, arr2) {
-  let countMatchedElements = 0;
   if (arr1.length !== arr2.length) {
     return false;
   } else {
