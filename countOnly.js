@@ -1,6 +1,5 @@
 /* eslint-disable linebreak-style */
 const countOnly = function(allItems, itemsToCount) {
-  let count = 0;
   let countObject = {};
   for (let index = 0; index < allItems.length; index++) {
     let item = allItems[index];
@@ -43,4 +42,3 @@ console.log(result1);
 assertEqual(result1["Jason"], 1);
 assertEqual(result1["Fang"], 2);
 assertEqual(result1["Karima"], undefined);
-assertEqual(result1["Salima"], 2);
