@@ -1,18 +1,14 @@
 /* eslint-disable linebreak-style */
-const countOnly = function(allItems, itemToCount) {
+const countOnly = function(allItems, itemsToCount) {
   let count = 0;
   let countObject = {};
-  for (let item in itemToCount) {
-    if (itemToCount[item] === true) {
-      for (let index = 0; index < allItems.length; index++) {
-        if (allItems[index] === item) {
-          count++;
-        }
-      }
-      if (count > 0) {
-        let Name = item;
-        countObject[Name] = count;
-        count = 0;
+  for (let index = 0; index < allItems.length; index++) {
+    let item = allItems[index];
+    if (itemsToCount[item]) {
+      if (countObject[item]) {
+        countObject[item] += 1;
+      } else {
+        countObject[item] = 1;
       }
     }
   }
