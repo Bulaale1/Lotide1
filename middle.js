@@ -3,17 +3,13 @@ const eqArrays = function(arr1, arr2) {
   let countMatchedElements = 0;
   if (arr1.length !== arr2.length) {
     return false;
-  } else if (arr1.length === arr2.length) {
+  } else {
     for (let i = 0; i < arr1.length; i++) {
-      if (arr1[i] === arr2[i]) {
-        countMatchedElements += 1;
+      if (arr1[i] !== arr2[i]) {
+        return false;
       }
     }
-    if (countMatchedElements ===  arr1.length) {
-      return true;
-    } else {
-      return false;
-    }
+    return true;
   }
 };
 const assertArraysEqual = function(actual, expected) {
@@ -25,11 +21,9 @@ const assertArraysEqual = function(actual, expected) {
   }
 };
 const middle = function(array) {
-  if (array.length === 0) {
+  if (array.length < 3) {
     return [];
-  } else if (array.length < 3) {
-    return [];
-  } else {
+  }  else {
     const mid = Math.round(array.length / 2);
     if (array.length % 2 === 0) {
       
