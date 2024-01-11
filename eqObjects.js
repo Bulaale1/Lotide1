@@ -22,10 +22,9 @@ const eqObjects = function(obj1, obj2) {
         }
       }
     } else {
-      if (property1[key] !== property2[key]) {
+      if (property1 !== property2) {
         return false;
       }
-  
     }
   } return true;
 };
