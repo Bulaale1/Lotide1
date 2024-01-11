@@ -15,7 +15,7 @@ const eqObjects = function(obj1, obj2) {
   for (let key in obj1) {
     let property1 = obj1[key];
     let property2 = obj2[key];
-    if (typeof(property1) === 'object' && typeof(property2) === 'object') {
+    if (Array.isArray(property1)  && Array.isArray(property2)) {
       for (let i = 0; i < property1.length; i++) {
         if (property1[i] !== property2[i]) {
           return false;
