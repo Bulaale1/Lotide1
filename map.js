@@ -31,8 +31,10 @@ const map = function(array, callback) {
   }
   return results;
 };
-const words = ["ground", "control", "to", "major", "tom"];
-let result = map((words),function(item) {
-  return item;
+const array = [10,15,25,8,9,55];
+let result = map((array),function(item) {
+  return item * 2;
+  
 });
-assertArraysEqual(words,result);
+console.log(result);
+assertArraysEqual([ 20, 30, 50, 16, 18, 110 ],result);
