@@ -13,4 +13,4 @@ assertArraysEqual(middle([1, 2]),[]);
 // Test case: An even array with more than 2 element should return the two middle element
 assertArraysEqual(middle([1, 2, 3, 4, 5, 6]),[3,4]);
 // Test case: An odd array with more than 2 element should return the  middle element
-assertArraysEqual(middle([1, 2, 3, 4]),[3,4]);
+assertArraysEqual(middle([1, 2, 3]),[2]);
