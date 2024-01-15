@@ -13,6 +13,6 @@ describe("#tail", () => {
     assert.deepEqual(tail(array1), [25,35,45]);
   });
   it(`returns an empty array when the input array has only one element`, () => {
-    assert.deepEqual(tail(oneElement)[8]);
+    assert.deepEqual(tail(oneElement), []);
   });
 });
