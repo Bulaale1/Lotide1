@@ -1,6 +1,4 @@
 /* eslint-disable linebreak-style */
-// const eqArrays = function(arr1, arr2) {
-//   if (arr1.length !== arr2.length) {
 const middle = function(array) {
   if (array.length < 3) {
     return [];
