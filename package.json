@@ -1,8 +1,8 @@
 {
-  "name": "lotide",
+  "name": "@bulaale116/lotide",
   "version": "0.1.0",
   "description": "testing lotide project ",
-  "main": "assertArraysEqual.js",
+  "main": "index.js",
   "directories": {
     "test": "test"
   },
@@ -11,7 +11,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Bulaale1/Lotide1.git"
+    "url": "git+https://github.com/bulaale116/Lotide1.git"
   },
   "keywords": [
     "testing",
@@ -21,9 +21,9 @@
   "author": "Yasin",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Bulaale1/Lotide1/issues"
+    "url": "https://github.com/bulaale116/Lotide1/issues"
   },
-  "homepage": "https://github.com/Bulaale1/Lotide1#readme",
+  "homepage": "https://github.com/bulaale116/Lotide1#readme",
   "devDependencies": {
     "chai": "^4.3.1",
     "mocha": "^9.2.2"
