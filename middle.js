@@ -1,6 +1,6 @@
 /* eslint-disable linebreak-style */
 const middle = function(array) {
-  if (array.length < 3) {
+  if (array.length < 3 || array.length === undefined) {
     return [];
   }
   const mid = Math.floor(array.length / 2);
